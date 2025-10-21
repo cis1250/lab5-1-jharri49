@@ -50,8 +50,10 @@ def print_frequencies(words, frequencies):
       y = words.index(x.strip('.,?!&').lower())
       print(words[y], "-", frequencies[y])
 
+def main():
+  words = []
+  frequencies = []
+  calculate_frequencies()
+  print_frequencies(words, frequencies)
 
-words = []
-frequencies = []
-calculate_frequencies()
-print_frequencies(words, frequencies)
+main()
